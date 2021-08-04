@@ -23,8 +23,8 @@ Route::apiResource('/post', PostsController::class)->only([
     'index', 'store','show', 'destroy'
   ]);
 Route::apiResource('/comment', CommentsController::class)->only([
-    'store'
+    'index','store','show'
   ]);
 Route::apiResource('/like', LikesController::class)->only([
-    'store', 'destroy'
+    'index','store','show', 'destroy'
   ]);
